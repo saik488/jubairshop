@@ -1,3 +1,5 @@
+index.html:
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,30 +42,22 @@
         <p>৳600</p>
         <button onclick="addToCart('Naruto Stylish Urban Anime TSHIRT', 600)">Add to Cart</button>
       </div>
-       <div class="product">
-        <img src="Detox.png" style="width:200px; height:400px;" alt="juice">
-        <h3>Green Detox Juice</h3>
-        <p>৳99</p>
-        <button onclick="addToCart('juice', 600)">Add to Cart</button>
-      </div>
-      <div class="product">
-        <img src="gojo.webp" style="width:200px; height:400px;" alt="gojo">
-        <h3>Gojou Satoru Anime TSHIRT STREETWEAR by Banga Kun Shop Drops shoulder Premium Black T-shirt – Gojo Jujutsu Kaisen</h3>
-        <p>৳599</p>
-        <button onclick="addToCart('gojo', 600)">Add to Cart</button>
-      </div>
-      <div class="product">
-        <img src="anime.webp" style="width:200px; height:400px;" alt="anime">
-        <h3>anime T-shirt for boys</h3>
-        <p>৳599</p>
-        <button onclick="addToCart('anime', 600)">Add to Cart</button>
-      </div>
     </div>
   </section>
 
   <section id="cart" class="cart">
     <h2>Your Cart</h2>
     <ul id="cartItems"></ul>
+    <div id="paymentForm">
+      <h3>Choose Payment Method:</h3>
+      <select id="paymentMethod">
+        <option value="Bkash">Bkash</option>
+        <option value="Nagad">Nagad</option>
+        <option value="Rocket">Rocket</option>
+        <option value="COD">Cash on Delivery</option>
+      </select>
+      <input type="text" id="transactionId" placeholder="Transaction ID (if paid)">
+    </div>
     <button onclick="placeOrder()">Place Order</button>
   </section>
 
@@ -81,6 +75,11 @@
       <button type="submit">Submit</button>
     </form>
     <p id="userInfo"></p>
+  </section>
+
+  <section class="admin">
+    <h2>Admin Panel</h2>
+    <ul id="adminOrders"></ul>
   </section>
 
   <footer>
