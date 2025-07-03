@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JubairShop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="websitelogo.png.webp.png" alt="JubairShop Logo" class="logo-img" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#account">Create Account</a></li>
+      </ul>
+    </nav>
+    <div class="cart">🛒</div>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Jubair's E-Shop</h1>
+    <p>Find the best products at the best prices.</p>
+    <a href="#products" class="btn">Shop Now</a>
+  </section>
+
+  <section class="search">
+    <input type="text" id="searchBar" placeholder="Search for products...">
+  </section>
+
+  <section id="products" class="products">
+    <h2>Featured Products</h2>
+    <div class="product-list">
+      <div class="product">
+        <img src="watch.png.web.webp" alt="Oraimo Watch">
+        <h3>Oraimo Watch ER OSW-42</h3>
+        <p>৳100</p>
+        <button>Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="headphone.png.webp.webp" alt="Foldable Bluetooth Headphones">
+        <h3>Foldable Bluetooth Over Ear Headphones</h3>
+        <p>৳200</p>
+        <button>Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>JubairShop দেশীয় ও বিশ্বমানের প্রোডাক্ট সহজে, দ্রুত ডেলিভারির মাধ্যমে পৌঁছে দেয়!</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>📘 <a href="https://www.facebook.com/md.jubair.hassan.942602" target="_blank">Visit our Facebook Page</a></p>
+  </section>
+
+  <section id="account" class="account">
+    <h2>Create an Account</h2>
+    <form id="signupForm">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 JubairShop. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
