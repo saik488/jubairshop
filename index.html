@@ -3,72 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JubairShop - Full E-Commerce</title>
+  <title>JubairShop - E-Commerce</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <img src="logo.png" alt="JubairShop Logo" style="height:60px; vertical-align: middle;">
-    <h1 style="display:inline; margin-left: 10px;">JubairShop</h1>
+    <div class="logo-nav">
+      <img src="logo.png" alt="Logo" class="logo">
+      <h1>JubairShop</h1>
+    </div>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#products">Products</a></li>
-        <li><a href="#payment">Payments</a></li>
-        <li><a href="#account">Account</a></li>
         <li><a href="#cart">Cart</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#orders">My Orders</a></li>
+        <li><a href="#account">Login</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="hero">
-    <h2>Welcome to Jubair's E-Shop</h2>
-    <p>One-stop solution for everything you need.</p>
+    <h2>Discover Premium Streetwear & Accessories</h2>
   </section>
 
   <section class="search">
-    <input type="text" id="searchBar" placeholder="Search for products...">
+    <input type="text" id="searchBar" placeholder="Search products...">
   </section>
 
   <section id="products" class="products">
-    <h2>Products</h2>
+    <h2>Our Products</h2>
     <div class="product-list" id="productList">
       <div class="product">
-        <img src="Detox.png" alt="Juice" style="width:100px;height:100px;">
+        <img src="naruto.webp" alt="Naruto T-Shirt">
+        <h3>Naruto Stylish Urban Anime TSHIRT</h3>
+        <p>৳600</p>
+        <button onclick="addToCart('Naruto Stylish Urban Anime TSHIRT', 600)">Add to Cart</button>
+      </div>
+       <div class="product">
+        <img src="Detox.png" style="width:200px; height:400px;" alt="juice">
         <h3>Green Detox Juice</h3>
-        <p>৳100</p>
-        <button onclick="addToCart('?', '?')">Add to Cart</button>
+        <p>৳99</p>
+        <button onclick="addToCart('juice', 600)">Add to Cart</button>
       </div>
       <div class="product">
-        <img src="naruto.webp" alt="Naruto T-Shirt" style="width:100px;height:100px;">
-        <h3>Naruto Stylish Urban Anime TSHIRT STREETWEAR by Banga Kun Shop Drops shoulder Premium Black T-shirt – Naruto Shippuden</h3>
-        <p>৳600</p>
-        <button onclick="addToCart('Naruto T-Shirt', 600)">Add to Cart</button>
+        <img src="gojo.webp" style="width:200px; height:400px;" alt="gojo">
+        <h3>Gojou Satoru Anime TSHIRT STREETWEAR by Banga Kun Shop Drops shoulder Premium Black T-shirt – Gojo Jujutsu Kaisen</h3>
+        <p>৳599</p>
+        <button onclick="addToCart('gojo', 600)">Add to Cart</button>
+      </div>
+      <div class="product">
+        <img src="anime.webp" style="width:200px; height:400px;" alt="anime">
+        <h3>anime T-shirt for boys</h3>
+        <p>৳599</p>
+        <button onclick="addToCart('anime', 600)">Add to Cart</button>
       </div>
     </div>
-  </section>
-
-  <section id="payment" class="payment">
-    <h2>Payment Methods</h2>
-    <ul>
-      <li>Bkash</li>
-      <li>Nagad</li>
-      <li>Rocket</li>
-      <li>Cash on Delivery</li>
-    </ul>
-  </section>
-
-  <section id="account" class="account">
-    <h2>Create an Account / Login</h2>
-    <form id="signupForm">
-      <input type="text" id="username" placeholder="Username" required>
-      <input type="email" id="email" placeholder="Email" required>
-      <input type="password" id="password" placeholder="Password" required>
-      <button type="submit">Register / Login</button>
-    </form>
-    <p>After logging in, users will see their orders and profile information.</p>
-    <div id="userInfo"></div>
   </section>
 
   <section id="cart" class="cart">
@@ -77,24 +67,24 @@
     <button onclick="placeOrder()">Place Order</button>
   </section>
 
-  <section id="about" class="about">
-    <h2>About JubairShop</h2>
-    <p>This platform is built to provide the best online shopping experience with instant order tracking, product management and real-time account updates.</p>
+  <section id="orders" class="orders">
+    <h2>Your Orders</h2>
+    <ul id="orderHistory"></ul>
   </section>
 
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
+  <section id="account" class="account">
+    <h2>Login / Register</h2>
+    <form id="authForm">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <button type="submit">Submit</button>
     </form>
-    <p>📧 Email us directly: <a href="mailto:dfaha071@gmail.com">dfaha071@gmail.com</a></p>
+    <p id="userInfo"></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 JubairShop. All rights reserved.</p>
+    <p>Contact: <a href="mailto:dfaha071@gmail.com">dfaha071@gmail.com</a></p>
   </footer>
 
   <script src="script.js"></script>
