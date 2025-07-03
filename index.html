@@ -1,32 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JubairShop</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JubairShop - Full E-Commerce</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="websitelogo.png.webp.png" alt="JubairShop Logo" class="logo-img" />
-    </div>
+    <img src="logo.png" alt="JubairShop Logo" style="height:60px; vertical-align: middle;">
+    <h1 style="display:inline; margin-left: 10px;">JubairShop</h1>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#products">Products</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#payment">Payments</a></li>
+        <li><a href="#account">Account</a></li>
         <li><a href="#contact">Contact</a></li>
-        <li><a href="#account">Create Account</a></li>
       </ul>
     </nav>
-    <div class="cart">🛒</div>
   </header>
 
   <section class="hero">
-    <h1>Welcome to Jubair's E-Shop</h1>
-    <p>Find the best products at the best prices.</p>
-    <a href="#products" class="btn">Shop Now</a>
+    <h2>Welcome to Jubair's E-Shop</h2>
+    <p>One-stop solution for everything you need.</p>
   </section>
 
   <section class="search">
@@ -34,37 +31,36 @@
   </section>
 
   <section id="products" class="products">
-    <h2>Featured Products</h2>
-    <div class="product-list">
+    <h2>Products</h2>
+    <div class="product-list" id="productList">
       <div class="product">
-        <img src="watch.png.web.webp" alt="Oraimo Watch">
-        <h3>Oraimo Watch ER OSW-42</h3>
+        <img src="Detox.png" alt="Product Image" style="width:200px;height:200px;">
+        <h3>Green Detox Juice</h3>
+        <br>
+        <br>
+        <br>
         <p>৳100</p>
         <button>Add to Cart</button>
       </div>
       <div class="product">
-        <img src="headphone.png.webp.webp" alt="Foldable Bluetooth Headphones">
-        <h3>Foldable Bluetooth Over Ear Headphones</h3>
-        <p>৳200</p>
+        <img src="naruto.webp" alt="Naruto T-Shirt" style="width:200px;height:200px;">
+        <h3>Naruto Stylish Urban Anime TSHIRT STREETWEAR by Banga Kun Shop Drops shoulder Premium Black T-shirt – Naruto Shippuden</h3>
+        <p>৳600</p>
         <button>Add to Cart</button>
       </div>
     </div>
+    </div>
+    </div>
   </section>
 
-  <section id="about" class="about">
-    <h2>About Us</h2>
-    <p>JubairShop দেশীয় ও বিশ্বমানের প্রোডাক্ট সহজে, দ্রুত ডেলিভারির মাধ্যমে পৌঁছে দেয়!</p>
-  </section>
-
-  <section id="contact" class="contact">
-    <h2>Contact Us</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-    <p>📘 <a href="https://www.facebook.com/md.jubair.hassan.942602" target="_blank">Visit our Facebook Page</a></p>
+  <section id="payment" class="payment">
+    <h2>Payment Methods</h2>
+    <ul>
+      <li>Bkash</li>
+      <li>Nagad</li>
+      <li>Rocket</li>
+      <li>Cash on Delivery</li>
+    </ul>
   </section>
 
   <section id="account" class="account">
@@ -75,6 +71,23 @@
       <input type="password" id="password" placeholder="Password" required>
       <button type="submit">Register</button>
     </form>
+    <p>After logging in, users will see their orders and profile information.</p>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About JubairShop</h2>
+    <p>This platform is built to provide the best online shopping experience with instant order tracking, product management and real-time account updates.</p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p>📧 Email us directly: <a href="mailto:dfaha071@gmail.com">dfaha071@gmail.com</a></p>
   </section>
 
   <footer>
